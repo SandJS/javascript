@@ -1,0 +1,45 @@
+{
+  "name": "@sandjs/eslint-config-sand",
+  "version": "1.0.0",
+  "description": "Sand JS ESLint config, following our styleguide",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepublish": "(in-install || eslint-find-rules --unused) && safe-publish-latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/sandjs/javascript"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "sand",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Kevin Smithson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/sandjs/javascript/issues"
+  },
+  "homepage": "https://gitlab.com/sandjs/javascript",
+  "devDependencies": {
+    "eslint": "^3.9.0",
+    "eslint-find-rules": "^1.14.3",
+    "eslint-plugin-import": "^2.0.1",
+    "in-publish": "^2.0.0",
+    "safe-publish-latest": "^1.1.1"
+  },
+  "peerDependencies": {
+    "eslint": "^3.9.0",
+    "eslint-plugin-import": "^2.0.1"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "dependencies": {
+    "@sandjs/eslint-config-base": "^1.0.0"
+  }
+}
